@@ -1,0 +1,63 @@
+#N canvas 6 43 686 654 10;
+#X obj 40 117 key;
+#X obj 100 405 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 424 34 p/detail_params;
+#X floatatom 40 142 5 0 0 0 - - -;
+#X obj 39 31 cnv 15 60 60 empty empty UDje-Electronics 20 12 0 14 -261682
+-258113 0;
+#X obj 41 187 sel 49 50 51 52 53 54 55 56 57 48;
+#X text 64 166 KEY 1 - 9 & 0;
+#X obj 157 405 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 214 405 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 101 349 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 158 349 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 215 349 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 101 293 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 158 293 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 215 293 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 100 461 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 417 420 p/audio;
+#X obj 44 235 p/keytoggle;
+#X obj 82 235 p/keytoggle;
+#X obj 123 234 p/keytoggle;
+#X obj 161 234 p/keytoggle;
+#X obj 202 234 p/keytoggle;
+#X obj 240 234 p/keytoggle;
+#X obj 281 233 p/keytoggle;
+#X obj 319 233 p/keytoggle;
+#X obj 360 231 p/keytoggle;
+#X obj 398 231 p/keytoggle;
+#X obj 532 319 p/taptempo;
+#X obj 415 342 p/audioTest;
+#X connect 0 0 3 0;
+#X connect 3 0 5 0;
+#X connect 5 0 17 0;
+#X connect 5 1 18 0;
+#X connect 5 2 19 0;
+#X connect 5 3 20 0;
+#X connect 5 4 21 0;
+#X connect 5 5 22 0;
+#X connect 5 6 23 0;
+#X connect 5 7 24 0;
+#X connect 5 8 25 0;
+#X connect 5 9 26 0;
+#X connect 17 0 1 0;
+#X connect 18 0 7 0;
+#X connect 19 0 8 0;
+#X connect 20 0 9 0;
+#X connect 21 0 10 0;
+#X connect 22 0 11 0;
+#X connect 23 0 12 0;
+#X connect 24 0 13 0;
+#X connect 25 0 14 0;
+#X connect 26 0 15 0;

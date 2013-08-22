@@ -1,0 +1,57 @@
+#N canvas 550 36 693 658 10;
+#X obj 76 31 key;
+#X obj 93 387 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X floatatom 76 56 5 0 0 0 - - -;
+#X obj 77 101 sel 49 50 51 52 53 54 55 56 57 48;
+#X text 100 80 KEY 1 - 9 & 0;
+#X obj 150 387 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 207 387 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 94 331 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 151 331 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 208 331 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 94 275 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 151 275 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 208 275 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 93 443 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+0 1;
+#X obj 75 149 ../keytoggle;
+#X obj 118 149 ../keytoggle;
+#X obj 159 148 ../keytoggle;
+#X obj 197 148 ../keytoggle;
+#X obj 238 148 ../keytoggle;
+#X obj 276 148 ../keytoggle;
+#X obj 317 147 ../keytoggle;
+#X obj 355 147 ../keytoggle;
+#X obj 396 145 ../keytoggle;
+#X obj 434 145 ../keytoggle;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 14 0;
+#X connect 3 1 15 0;
+#X connect 3 2 16 0;
+#X connect 3 3 17 0;
+#X connect 3 4 18 0;
+#X connect 3 5 19 0;
+#X connect 3 6 20 0;
+#X connect 3 7 21 0;
+#X connect 3 8 22 0;
+#X connect 3 9 23 0;
+#X connect 14 0 1 0;
+#X connect 15 0 5 0;
+#X connect 16 0 6 0;
+#X connect 17 0 7 0;
+#X connect 18 0 8 0;
+#X connect 19 0 9 0;
+#X connect 20 0 10 0;
+#X connect 21 0 11 0;
+#X connect 22 0 12 0;
+#X connect 23 0 13 0;

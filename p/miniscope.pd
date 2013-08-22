@@ -1,0 +1,16 @@
+#N canvas 0 22 450 300 10;
+#X obj 294 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 295 69 r dsp_run;
+#X obj 294 124 metro 20;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-scope 256 float 0;
+#X coords 0 1 255 -1 60 40 2 0 0;
+#X restore 100 100 graph;
+#X obj 257 158 tabwrite~ \$0-scope;
+#X obj 228 116 inlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 5 0 4 0;
+#X coords 0 -1 1 1 60 40 2 100 100;

@@ -1,2 +1,18 @@
-#N canvas 762 75 418 526 10;
-#X floatatom -904 31 5 0 0 1 key_repeat_interval - dp001;
+#N canvas 765 62 466 528 10;
+#X floatatom -851 78 5 0 0 1 key_repeat_interval - dp001;
+#X msg -612 133 open;
+#X obj -650 189 coll ../data/def_settings.txt;
+#C restore;
+#X msg -611 156 write ../data/def_settings.txt;
+#X floatatom -851 49 5 0 100 1 master_fader - mst_fad;
+#X obj -668 226 print;
+#X msg -686 151 dump;
+#X obj -611 49 closebang;
+#X obj -709 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg -630 386;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 6 0 2 0;
+#X connect 8 0 2 0;

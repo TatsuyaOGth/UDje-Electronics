@@ -1,0 +1,15 @@
+#N canvas 49 308 179 346 10;
+#X obj 33 136 prepend add;
+#X obj 33 285 outlet;
+#X obj 33 109 prepend \$1;
+#X obj 33 60 inlet;
+#X msg 60 216 set \, addsemi;
+#X obj 33 185 t a b;
+#X obj 59 253 loadbang;
+#X connect 0 0 5 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;
+#X connect 5 1 4 0;
+#X connect 6 0 1 0;

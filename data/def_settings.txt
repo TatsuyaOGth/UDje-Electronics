@@ -1,0 +1,2 @@
+0, master_fader 80;
+1, key_repeat_interval 450;

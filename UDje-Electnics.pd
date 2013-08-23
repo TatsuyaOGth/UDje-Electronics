@@ -1,4 +1,4 @@
-#N canvas 10 67 686 654 10;
+#N canvas -757 82 686 654 10;
 #X obj 424 34 p/detail_params;
 #X obj 39 31 cnv 15 60 60 empty empty UDje-Electronics 20 12 0 14 -261682
 -258113 0;
@@ -23,6 +23,7 @@ test;
 #X obj 320 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 341 283 stop;
+#X obj 168 429 p/fx/eq;
 #X connect 8 0 10 0;
 #X connect 10 0 9 0;
 #X connect 10 0 7 0;

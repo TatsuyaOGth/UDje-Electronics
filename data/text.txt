@@ -1,0 +1,2 @@
+glbset_mst_fad 80;
+glbset_key_rep_int 450;

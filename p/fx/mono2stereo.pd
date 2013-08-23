@@ -1,0 +1,15 @@
+#N canvas 536 152 450 300 10;
+#X obj 55 97 inlet~;
+#X obj 51 261 outlet~;
+#X obj 155 262 outlet~;
+#X floatatom 253 101 5 0 0 0 - - -;
+#X obj 14 15 cnv 15 35 35 empty empty mono_to_steleo 20 12 0 14 -257985
+-66577 0;
+#X obj 155 160 delwrite~ \$0-widen 1000;
+#X obj 154 224 delread~ \$0-widen 25;
+#X obj 253 73 inlet;
+#X connect 0 0 5 0;
+#X connect 0 0 1 0;
+#X connect 3 0 6 0;
+#X connect 6 0 2 0;
+#X connect 7 0 3 0;

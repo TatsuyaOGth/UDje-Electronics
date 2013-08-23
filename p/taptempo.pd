@@ -5,7 +5,7 @@
 #X obj 31 26 key;
 #X obj 31 50 sel 32;
 #X obj 44 197 f;
-#X obj 115 316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 115 316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 112 288 r dsp_run;
 #X obj 27 400 metro 500;
@@ -17,11 +17,11 @@
 #X obj 147 370 t b f;
 #X msg 146 395 60000;
 #X obj 146 417 /;
-#X floatatom 164 560 5 0 0 0 - - _#0-bpm;
+#X floatatom 164 560 5 0 0 0 - - -;
 #X obj 165 504 bng 15 250 50 0 empty empty empty 17 7 0 10 -204800
 -4160 -1;
 #X obj 106 527 tgl 50 0 empty empty empty 17 7 0 10 -13381 -257985
--1 0 1;
+-1 1 1;
 #X msg 29 457 1;
 #X msg 58 456 0;
 #X obj 57 431 del 200;
@@ -43,13 +43,15 @@
 #X obj 267 525 b;
 #X obj 219 399 loadbang;
 #X msg 219 424 read -resize ../data/click.aif metro;
-#X obj 201 534 s \$0-m;
+#X obj 217 538 s \$0-m;
 #X text 163 542 BPM;
-#X text 183 523 comment;
 #X obj 269 579 throw~ outL;
 #X obj 344 580 throw~ outR;
+#X obj 164 595 s bpm;
+#X obj 77 172 s tempo_interval;
 #X connect 0 0 1 0;
 #X connect 1 0 9 0;
+#X connect 1 0 42 0;
 #X connect 2 0 8 1;
 #X connect 2 0 14 0;
 #X connect 2 0 23 0;
@@ -72,6 +74,7 @@
 #X connect 14 1 16 1;
 #X connect 15 0 16 0;
 #X connect 16 0 17 0;
+#X connect 17 0 41 0;
 #X connect 18 0 37 0;
 #X connect 20 0 19 0;
 #X connect 20 0 33 1;
@@ -80,8 +83,8 @@
 #X connect 23 0 22 1;
 #X connect 24 0 0 0;
 #X connect 24 1 0 1;
+#X connect 27 0 39 0;
 #X connect 27 0 40 0;
-#X connect 27 0 41 0;
 #X connect 28 0 33 0;
 #X connect 29 0 24 0;
 #X connect 30 0 18 0;

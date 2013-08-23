@@ -1,4 +1,4 @@
-#N canvas 25 63 686 654 10;
+#N canvas 10 67 686 654 10;
 #X obj 424 34 p/detail_params;
 #X obj 39 31 cnv 15 60 60 empty empty UDje-Electronics 20 12 0 14 -261682
 -258113 0;
@@ -7,9 +7,9 @@
 #X obj 415 342 p/audioTest;
 #X obj 425 61 p/log;
 #X obj 106 143 p/ctl/tenkey;
-#X obj 79 343 p/fx/myVibrate;
+#X obj 94 358 p/fx/myVibrate;
 #X obj 81 200 adc~;
-#X obj 118 292 p/miniscope;
+#X obj 117 287 p/miniscope;
 #X obj 89 232 *~ 1;
 #X floatatom 133 203 5 0 0 0 - - -;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -23,6 +23,7 @@ test;
 #X obj 320 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 341 283 stop;
+#X connect 8 0 10 0;
 #X connect 10 0 9 0;
 #X connect 10 0 7 0;
 #X connect 11 0 10 1;

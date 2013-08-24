@@ -1,8 +1,0 @@
-#N canvas 568 205 171 190 10;
-#X obj 28 32 inlet;
-#X obj 28 94 prepend store;
-#X obj 28 67 prepend \$1;
-#X obj 28 128 s to_preset;
-#X connect 0 0 2 0;
-#X connect 1 0 3 0;
-#X connect 2 0 1 0;

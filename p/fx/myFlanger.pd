@@ -14,9 +14,9 @@
 #X obj 4 76 fx_level;
 #X obj 41 6 cnv 15 70 30 empty empty FLANGER 3 12 0 14 -191407 -4160
 0;
-#X obj -75 228 s \$0-lv;
+#X obj -102 265 s \$0-lv;
 #X obj 374 -97 inlet;
-#X obj -76 20 r \$0-lv_set;
+#X obj -109 -70 r \$0-lv_set;
 #X obj 378 44 s \$0-lv_set;
 #X obj 132 170 mono2stereo;
 #X obj 383 218 preset_manager preset/myFlanger.txt;
@@ -32,9 +32,12 @@
 #X obj 135 16 r \$0-freq;
 #X obj 179 40 r \$0-depth;
 #X obj 221 67 r \$0-feedback;
+#X obj 35 -79 inlet;
+#X obj -85 88 switch~;
 #X connect 0 0 23 0;
 #X connect 1 0 3 0;
 #X connect 3 0 21 0;
+#X connect 3 1 33 0;
 #X connect 5 0 20 0;
 #X connect 6 0 17 0;
 #X connect 6 1 23 0;
@@ -58,4 +61,5 @@
 #X connect 29 0 21 1;
 #X connect 30 0 21 2;
 #X connect 31 0 21 3;
+#X connect 32 0 3 1;
 #X coords 0 -1 1 1 120 200 2 0 0;

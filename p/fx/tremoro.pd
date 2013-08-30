@@ -5,9 +5,9 @@
 #X obj 162 59 inlet;
 #X obj 243 83 \$1;
 #X obj 240 59 loadbang;
-#X obj 105 188 >~ 0;
-#X obj 105 158 osc~;
-#X obj 31 235 *~;
+#X obj 162 194 >~ 0;
+#X obj 162 164 osc~;
+#X obj 26 269 *~;
 #X connect 0 0 8 0;
 #X connect 2 0 7 0;
 #X connect 3 0 2 0;

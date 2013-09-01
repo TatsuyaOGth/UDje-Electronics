@@ -1,53 +1,68 @@
-#N canvas 120 50 693 658 10;
+#N canvas 121 50 693 658 10;
 #X obj 76 31 key;
-#X obj 93 387 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 74 284 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X floatatom 77 105 5 0 0 0 - - -;
-#X obj 78 150 sel 49 50 51 52 53 54 55 56 57 48;
-#X text 101 129 KEY 1 - 9 & 0;
-#X obj 150 387 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X floatatom 76 143 5 0 0 0 - - -;
+#X obj 77 188 sel 49 50 51 52 53 54 55 56 57 48;
+#X text 100 167 KEY 1 - 9 & 0;
+#X obj 130 285 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 207 387 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 184 284 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 94 331 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 243 285 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 151 331 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 301 284 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 208 331 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 362 282 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 94 275 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 419 280 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 151 275 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 473 280 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 208 275 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 527 280 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 93 443 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
+#X obj 585 280 tgl 50 0 empty empty empty 17 7 0 10 -260097 -4034 -159808
 0 1;
-#X obj 76 198 ../keytoggle;
-#X obj 119 198 ../keytoggle;
-#X obj 160 197 ../keytoggle;
-#X obj 198 197 ../keytoggle;
-#X obj 239 197 ../keytoggle;
-#X obj 277 197 ../keytoggle;
-#X obj 318 196 ../keytoggle;
-#X obj 356 196 ../keytoggle;
-#X obj 397 194 ../keytoggle;
-#X obj 435 194 ../keytoggle;
-#X obj 60 519 change;
-#X obj 106 519 change;
-#X obj 157 520 change;
-#X obj 203 520 change;
-#X obj 250 520 change;
-#X obj 62 608 prepend tenkey;
-#X msg 60 545 0 \$1;
-#X obj 132 29 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 75 236 ../keytoggle;
+#X obj 118 236 ../keytoggle;
+#X obj 159 235 ../keytoggle;
+#X obj 197 235 ../keytoggle;
+#X obj 238 235 ../keytoggle;
+#X obj 276 235 ../keytoggle;
+#X obj 317 234 ../keytoggle;
+#X obj 355 234 ../keytoggle;
+#X obj 396 232 ../keytoggle;
+#X obj 434 232 ../keytoggle;
+#X obj 73 424 change;
+#X obj 119 424 change;
+#X obj 170 425 change;
+#X obj 216 425 change;
+#X obj 263 425 change;
+#X obj 75 513 prepend tenkey;
+#X msg 73 450 0 \$1;
+#X obj 123 48 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 76 70 spigot;
-#X msg 105 545 1 \$1;
-#X msg 157 545 2 \$1;
-#X msg 203 545 3 \$1;
-#X msg 251 544 4 \$1;
-#X obj 61 634 outlet;
+#X msg 118 450 1 \$1;
+#X msg 170 450 2 \$1;
+#X msg 216 450 3 \$1;
+#X msg 264 449 4 \$1;
+#X obj 74 539 outlet;
+#X obj 315 425 change;
+#X obj 363 425 change;
+#X obj 409 425 change;
+#X obj 456 425 change;
+#X obj 508 425 change;
+#X msg 316 449 5 \$1;
+#X msg 363 450 6 \$1;
+#X msg 409 450 7 \$1;
+#X msg 458 449 8 \$1;
+#X msg 509 449 9 \$1;
+#X obj 124 21 inlet;
+#X obj 180 127 s log_info;
+#X obj 183 53 sel 0 1;
+#X msg 181 76 controller OFF : tenkey;
+#X msg 194 99 controller ON : tenkey;
 #X connect 0 0 32 0;
 #X connect 1 0 24 0;
 #X connect 2 0 3 0;
@@ -65,6 +80,11 @@
 #X connect 6 0 26 0;
 #X connect 7 0 27 0;
 #X connect 8 0 28 0;
+#X connect 9 0 38 0;
+#X connect 10 0 39 0;
+#X connect 11 0 40 0;
+#X connect 12 0 41 0;
+#X connect 13 0 42 0;
 #X connect 14 0 1 0;
 #X connect 15 0 5 0;
 #X connect 16 0 6 0;
@@ -83,9 +103,25 @@
 #X connect 29 0 37 0;
 #X connect 30 0 29 0;
 #X connect 31 0 32 1;
+#X connect 31 0 50 0;
 #X connect 32 0 2 0;
 #X connect 33 0 29 0;
 #X connect 34 0 29 0;
 #X connect 35 0 29 0;
 #X connect 36 0 29 0;
+#X connect 38 0 43 0;
+#X connect 39 0 44 0;
+#X connect 40 0 45 0;
+#X connect 41 0 46 0;
+#X connect 42 0 47 0;
+#X connect 43 0 29 0;
+#X connect 44 0 29 0;
+#X connect 45 0 29 0;
+#X connect 46 0 29 0;
+#X connect 47 0 29 0;
+#X connect 48 0 31 0;
+#X connect 50 0 51 0;
+#X connect 50 1 52 0;
+#X connect 51 0 49 0;
+#X connect 52 0 49 0;
 #X coords 0 658 1 657 200 60 0;

@@ -23,8 +23,8 @@
 #X floatatom 169 122 5 0 0 0 - - -;
 #X obj 174 47 loadbang;
 #X msg 174 70 880;
-#X obj 115 338 throw~ outL;
-#X obj 191 337 throw~ outR;
+#X obj 113 331 outlet~;
+#X obj 191 331 outlet~;
 #X connect 0 0 7 0;
 #X connect 1 0 14 0;
 #X connect 2 0 10 0;

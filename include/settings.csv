@@ -1,0 +1,4 @@
+main_gain, 1;
+eq_tgl, 1;
+eq_highcut, 500;
+eq_lowcut, 16000;
